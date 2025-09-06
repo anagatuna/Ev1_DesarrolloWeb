@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #e6ecf0;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.sidebar {
+  width: 30%;
+  background: #102c49;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+.sidebar img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contenido {
+  width: 70%;
+  background: white;
+  padding: 30px;
+}
+
+.contenido header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #123456;
+}
+
+.contenido h2 {
+  color: #123456;
+  margin-top: 20px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
