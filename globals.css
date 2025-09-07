@@ -104,3 +104,74 @@ h1{
 .integrante a:hover {
   background-color: #17574e;
 }
+
+.bloque-enlaces {
+  background-color: #1c2754;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.bloque-enlaces h2 {
+  color: rgb(0, 255, 76);
+  margin-bottom: 10px;
+}
+
+.lista-enlaces {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-enlaces li {
+  margin: 6px 0;
+}
+
+.lista-enlaces a {
+  color: #e8eefc;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.lista-enlaces a:hover {
+  background-color: #17574e;
+  color: #fff;
+}
+
+.lista-enlaces {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.lista-enlaces li {
+  margin: 0;
+}
+
+.lista-enlaces a {
+  display: block;
+  padding: 8px 10px;
+  text-align: left;
+  border: 1px solid #2a376f;
+  border-radius: 6px;
+  background: #172351;
+}
+
+@media (max-width: 1200px) {
+  .lista-enlaces { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 900px) {
+  .lista-enlaces { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 640px) {
+  .lista-enlaces { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 420px) {
+  .lista-enlaces { grid-template-columns: 1fr; }
+}
