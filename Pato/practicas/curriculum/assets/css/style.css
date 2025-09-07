@@ -14,7 +14,7 @@ body {
 
 .sidebar {
   width: 30%;
-  background: #102c49;
+  background: #5863c5;
   color: white;
   padding: 20px;
   border-top-left-radius: 15px;
@@ -28,7 +28,8 @@ body {
 }
 
 .sidebar img {
-  width: 100%;
+  padding: 1rem 1rem;
+  width: 55%;
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -44,11 +45,11 @@ body {
 .contenido header h1 {
   margin: 0;
   font-size: 28px;
-  color: #123456;
+  color: #5863c5;
 }
 
 .contenido h2 {
-  color: #123456;
+  color: #5863c5;
   margin-top: 20px;
   border-bottom: 2px solid #ddd;
   padding-bottom: 5px;
