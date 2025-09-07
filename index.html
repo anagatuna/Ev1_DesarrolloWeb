@@ -1,12 +1,188 @@
 <!DOCTYPE html>
-<html lang="es" translate="no">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
-    <link rel="stylesheet" href="globals.css">
+    <title>Evidencia 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbh1SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p><a href="Pato/">pato</a></p>
+    <!-- Header -->
+    <header>
+        <div class="topbar">
+            <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="#intro">Inicio</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#elementos">Elementos</a></li>
+                <li><a href="#aplicaciones">Aplicaciones</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#enlaces">Enlaces útiles</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+
+        <section id="intro" class="seccion1">
+            <h1>Introducción general al Desarrollo Web</h1>
+            <p>
+                El <strong>desarrollo web</strong> es el proceso de <b>crear</b>, <b>estructurar</b> y 
+                <b>mantener</b> sitios y aplicaciones que funcionan en navegadores. 
+                Combina diversas <em>técnicas</em>, <em>lenguajes</em> y <em>buenas prácticas</em> 
+                para ofrecer experiencias digitales útiles, accesibles y atractivas.
+            </p>
+            <p>
+                Este proceso se organiza en <u>tres capas principales</u>:
+            </p>
+            <ul>
+                <li><strong>Estructura (HTML):</strong> define el contenido y la organización de la página.</li>
+                <li><strong>Presentación (CSS):</strong> controla el diseño, los colores y los estilos visuales.</li>
+                <li><strong>Comportamiento (JavaScript):</strong> añade dinamismo e interactividad.</li>
+            </ul>
+            <p>
+                En esta evidencia nos enfocaremos principalmente en
+                <abbr title="HyperText Markup Language">HTML</abbr> y 
+                <abbr title="Cascading Style Sheets">CSS</abbr>, 
+                ya que constituyen la base de todo proyecto web 
+                y fueron los temas abordados durante estas semanas en clase.
+            </p>
+        </section>
+
+        <!-- CARACTERÍSTICAS -->
+        <section id="caracteristicas" class="seccion1">
+            <h1>Características del desarrollo web</h1>
+
+            <article>
+                <h3>Accesible</h3>
+                <p>
+                    Un sitio web accesible garantiza que todas las personas, incluyendo aquellas con
+                    discapacidades, puedan navegar y entender el contenido. Esto incluye:
+                </p>
+                <ul>
+                    <li>Texto alternativo en imágenes: <code>&lt;img alt="Descripción"&gt;</code></li>
+                    <li>Navegación mediante teclado y lectores de pantalla</li>
+                    <li>Contraste adecuado entre texto y fondo</li>
+                </ul>
+                <p>La accesibilidad mejora la experiencia de usuario y cumple con buenas prácticas internacionales.</p>
+            </article>
+
+            <article>
+                <h3>Responsivo</h3>
+                <p>
+                    Un sitio responsivo se adapta a diferentes tamaños de pantalla, desde móviles hasta monitores grandes. 
+                    Esto se logra mediante:
+                </p>
+                <ul>
+                    <li>Diseño flexible con CSS y <code>flexbox</code> o <code>grid</code></li>
+                    <li>Uso de <code>media queries</code> para ajustar estilos según la resolución</li>
+                    <li>Imágenes y contenido que se redimensionan correctamente</li>
+                </ul>
+                <p>Así, los usuarios disfrutan de una experiencia consistente sin importar el dispositivo.</p>
+            </article>
+
+            <article>
+                <h3>Semántico</h3>
+                <p>
+                    HTML5 proporciona etiquetas semánticas que describen el propósito del contenido, ayudando a navegadores, motores de búsqueda y lectores de pantalla a entender la estructura de la página:
+                </p>
+                <ul>
+                    <li><code>&lt;header&gt;</code>: Encabezado principal</li>
+                    <li><code>&lt;nav&gt;</code>: Menú de navegación</li>
+                    <li><code>&lt;main&gt;</code>: Contenido principal</li>
+                    <li><code>&lt;section&gt;</code>: Secciones de contenido relacionadas</li>
+                    <li><code>&lt;article&gt;</code>: Artículos o bloques independientes</li>
+                    <li><code>&lt;aside&gt;</code>: Información secundaria o complementaria</li>
+                    <li><code>&lt;footer&gt;</code>: Pie de página</li>
+                </ul>
+                <p>Usar HTML semántico mejora la accesibilidad, el <abbr title="Optimización en motores de búsqueda">SEO</abbr> y la mantenibilidad del sitio.</p>
+            </article>
+        </section>
+
+
+        <!-- ELEMENTOS FUNDAMENTALES -->
+        <section id="elementos" class="seccion1">
+            <h1>Elementos fundamentales</h1>
+            <p>Texto de Ejemplo</p>
+        </section>
+
+        <!-- APLICACIONES -->
+        <section id="aplicaciones" class="seccion1">
+            <h1>Aplicaciones del desarrollo web</h1>
+            <p>Texto de Ejemplo</p>
+        </section>
+
+        <!-- HTML -->
+        <section id="html" class="seccion1">
+            <h1>¿Qué es HTML?</h1>
+            <p>Texto de Ejemplo</p>
+        </section>
+
+        <!-- CSS -->
+        <section id="css" class="seccion1">
+            <h1>¿Qué es CSS?</h1>
+            <p>Texto de Ejemplo</p>
+        </section>
+
+        <!-- ENLACES EXTERNOS -->
+        <section id="enlaces" class="seccion1">
+            <h1>Enlaces externos para ampliar</h1>
+            <p>Texto de Ejemplo</p>
+        </section>
+
+        <!-- NOSOTROS -->
+        <section id="nosotros" class="seccion1">
+            <h1>Nosotros</h1>
+            <div class="equipo">
+
+                <div class="integrante">
+                    <img src="foto1.jpg" alt="Foto de Roberto">
+                    <h3>Almaguer Garza Roberto</h3>
+                    <p>Matrícula: 1862977</p>
+                    <a href="https://mi-pagina-juan.com" target="_blank">Página personal</a>
+                </div>
+
+                <div class="integrante">
+                    <img src="foto2.jpg" alt="Foto de Aldo Patricio">
+                    <h3>Balderrama del Ángel Aldo Patricio</h3>
+                    <p>Matrícula: 2179971</p>
+                    <a href="https://mi-pagina-carlos.com" target="_blank">Página personal</a>
+                </div>
+
+                <div class="integrante">
+                    <img src="foto3.jpg" alt="Foto de Valentina">
+                    <h3>Del Valle Luna Valentina</h3>
+                    <p>Matrícula: 2100579</p>
+                    <a href="https://mi-pagina-maria.com" target="_blank">Página personal</a>
+                </div>
+
+                <div class="integrante">
+                    <img src="foto4.jpg" alt="Foto de Román Osvaldo">
+                    <h3>García Hernández Román Osvaldo</h3>
+                    <p>Matrícula: 1860130</p>
+                    <a href="https://mi-pagina-carlos.com" target="_blank">Página personal</a>
+                </div>
+
+                <div class="integrante">
+                    <img src="foto5.jpg" alt="Foto de Ana Lucía">
+                    <h3>Treviño Correa Ana Lucía</h3>
+                    <p>Matrícula: 2115134</p>
+                    <a href="https://mi-pagina-carlos.com" target="_blank">Página personal</a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Pie de Página, no se que va aqui</p>
+    </footer>
 </body>
 </html>
