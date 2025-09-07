@@ -20,7 +20,7 @@ body{
  
 header{
     background-color: #7f5a1a;
-    padding: 10 px 0 px 10px 5px;
+    padding: 10px 0px 10px 5px;
     border-radius: 10px 10px 0px 0px;
     color: #fff;
 }
@@ -134,14 +134,18 @@ nav ul li a:hover{
     width: 90%;
     margin: 2rem;
     padding: 1.5rem 2rem;
-    background-color: #fffff9;
+    background-color: #4b3b2b;
     border-radius: 12px;
-    color: #4b3b2b;
+    color: #fffff9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #contacto p a{
     text-decoration: none;
-    color: #7f5a1a;
+    color: #e6f142;
 }
 
 #contacto p a:hover{
