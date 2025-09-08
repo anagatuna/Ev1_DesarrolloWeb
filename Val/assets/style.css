@@ -1,0 +1,174 @@
+/*Cuerpo de la página*/
+body {
+    font-family: "Literata", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    background-color: #F2CDA0;
+    display: flex;
+    flex-direction: column;
+}
+/*Encabezado*/
+header{
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+
+/*banda horizontal*/
+.topband{
+  height: 100px;
+  background: #ffffff;
+  position: relative;
+  z-index: 1;
+  /*full-bleed dentro de un contenedor centrado */
+  width: 100vw; /* largo de la banda*/
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: 50px;
+
+}
+/*banda y foto*/
+.banda{
+    position: relative;
+    height: 50px;
+    margin-top: 6rem; 
+    margin-bottom: 9rem;
+}
+/*Marco alrededor de mi foto*/
+.marco-foto {
+    width: 20%;
+    border: 8px solid #735840;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    position: absolute;  
+    transform: translateX(-50%, -50%);
+    left:40%;
+    top: -100px;                    /*ajusta cuanto “muerde” la banda Y por encima de la banda*/
+    z-index: 2;  
+}
+
+/*Foto de perfil*/
+.foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Contenido de mi página*/
+.container {
+    background-color: #F2D5CE;
+    width: 90%;
+    margin: 40px;
+    padding: 50px;
+    box-shadow: 0 4px 10px rgb(137, 123, 100);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/*Imágenes agregadas*/
+.img-tocho{
+    width: 20%;
+    align-items: center;
+    margin-left: 20px;
+    margin: 30px;
+    border-radius: 25%;
+}
+
+.img-oreo{
+    width: 80%;
+    align-items: center;
+    border-radius: 10%;
+    margin-top: 24px;
+}
+
+.img-mascotas{
+    width: 40%;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-top: 40px;
+}
+
+/*Animaciones para las imágenes*/
+.img-tocho:hover,.img-mascotas:hover {
+    transition: 0.3s ease;
+    transform: scale(1.5); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.img-oreo:hover, .marco-foto:hover{
+    transition: 0.3s ease;
+    transform: scale(1.3); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/*Color de los títulos*/
+h1, h2{
+    color: #BF5468;
+}
+
+h5{
+    padding-top: 25px;
+    text-align: center;
+    color: #6e5d47  ;
+}
+
+/*Color del texto*/
+.parrafo{
+    color:#735840;
+    text-align: justify;
+}
+
+
+/* sombra de las cards*/
+.card{
+    box-shadow: 0 8px 20px rgba(153, 45, 83, 0.5);
+}
+
+/* Lista de las practicas*/
+.tareas{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+/*animacion para los elementos de la lista de tareas */
+.tareas li a{
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: rgb(177, 164, 146);
+}
+
+.tareas li a:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+
+/* Pie de página con tareas */
+footer{
+    background-color: #6e5d47;
+    color: #F2D5CE;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    box-shadow: 0 -5px 10px rgb(182, 156, 115);  
+}
+
+/*Color del Título del pie de pag*/
+h3 {
+    color:#F2CDA0
+}
