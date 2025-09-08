@@ -1,3 +1,4 @@
+/* Estilo general del cuerpo de la página */
 body {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -162,7 +163,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Footer */
+/* Pie de Pagina */
 footer {
     text-align: center;
     padding: 1rem;

@@ -1,6 +1,7 @@
+/* Estilos generales del body */
 body{
     font-family: Arial, Helvetica, Sans-Serif;
-    display: flex;
+    display: flex; /* contenido centrado */
     justify-content: center;
     align-content: center;
     min-height: 100vh;
@@ -8,16 +9,18 @@ body{
     background-color: #f0f0f0;
 }
  
+/* Contenedor principal */
 .content{
     background-color: #ffffff;
     margin: 10px;
     width: 90%;
     padding: 20px;
-    box-shadow: 0 4px 10px silver;
+    box-shadow: 0 4px 10px silver; /* sombra ligera */
     border-radius: 10px;
     box-sizing: border-box;
 }
  
+/* Encabezado principal */
 header{
     background-color: #7f5a1a;
     padding: 10px 0px 10px 5px;
@@ -25,22 +28,26 @@ header{
     color: #fff;
 }
  
+/* Título del encabezado */
 header h1{
-    text-shadow: 1px 1px 2px #000;
+    text-shadow: 1px 1px 2px #000; /* sombra texto */
 }
  
+/* Barra de navegación */
 nav{
     background-color: black;
 }
  
+/* Lista de navegación */
 nav ul{
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    display: flex; /* enlaces en fila */
     justify-content: space-around;
 }
  
+/* Enlaces navegación */
 nav ul li a{
     display: block;
     padding: 15px 0;
@@ -50,17 +57,19 @@ nav ul li a{
     transition: background-color 0.35 ease;
 }
  
+/* Elemento de lista nav */
 nav ul li{
     flex: 1;
     text-align: center;
 }
  
+/* Hover enlaces nav */
 nav ul li a:hover{
     background-color: #d2b48c;
     color: #000;
-    
 }
  
+/* Contenedor carrusel */
 .carrusel{
     width: 100%;
     height: 30rem;
@@ -68,17 +77,20 @@ nav ul li a:hover{
     position: relative;
 }
  
+/* Contenedor imágenes carrusel */
 .img-productos{
     display: flex;
     width: max-content;
-    animation: scroll 30s linear infinite;
+    animation: scroll 30s linear infinite; /* animación scroll */
 }
  
+/* Imágenes del carrusel */
 .img-productos img{
     width: 50rem;
     height: 30rem;
 }
  
+/* Animación de desplazamiento */
 @keyframes scroll{
     0%{
         transform: translateX(0);
@@ -88,6 +100,7 @@ nav ul li a:hover{
     }
 }
  
+/* Sección menú */
 #menu{
     width: 90%;
     margin: 2rem;
@@ -97,30 +110,35 @@ nav ul li a:hover{
     color: #4b3b2b;
 }
  
+/* Lista menú */
 #menu ul{
     list-style: none;
     padding: 0;
     margin: 0;
 }
  
+/* Elementos lista menú */
 #menu ul li{
     margin-bottom: 1.6rem;
-    border-left: 4px solid #bd956d;
+    border-left: 4px solid #bd956d; /* línea lateral */
     padding-left: 1rem;
     transition: background-color 0.3s ease;
     cursor:pointer;
     border-radius: 5px;
 }
  
+/* Hover elementos menú */
 #menu ul li:hover{
     background-color: #f3e9d2;
 }
  
+/* Título platillos menú */
 #menu ul li strong{
     font-size: 1.15rem;
     color: #7f5a1a;
 }
  
+/* Descripción platillos menú */
 #menu ul li small{
     display: block;
     font-size: 0.85rem;
@@ -129,6 +147,7 @@ nav ul li a:hover{
     margin-top: 0.2rem;
 }
 
+/* Sección contacto */
 #contacto{
     border: 1px solid #684726;
     width: 90%;
@@ -143,15 +162,18 @@ nav ul li a:hover{
     flex-direction: column;
 }
 
+/* Enlaces contacto */
 #contacto p a{
     text-decoration: none;
     color: #e6f142;
 }
 
+/* Hover enlaces contacto */
 #contacto p a:hover{
     color: rgb(6, 113, 128);
 }
 
+/* Sección promociones */
 #promos{
     border: 1px solid #684726;
     width: 40%;
@@ -162,10 +184,12 @@ nav ul li a:hover{
     color: #4b3b2b;
 }
 
+/* Lista promociones */
 #promos ul{
     list-style: none;
 }
 
+/* Elemento individual promo */
 #promos ul li{
     border: 1px solid #684726;
     width: 70%;
@@ -176,12 +200,14 @@ nav ul li a:hover{
     color: #ffffff;
 }
 
+/* Imagen promoción */
 #promos ul li img{
     height: 250px;
     width: 350px;
     border-radius: 5%;
 }
 
+/* Sección nosotros */
 #nosotros{
     border: 1px solid #684726;
     width: 40%;
@@ -192,10 +218,12 @@ nav ul li a:hover{
     color: #4b3b2b;
 }
 
+/* Contenedor info nosotros */
 .info{
     display: flex;
 }
 
+/* Imagen sección nosotros */
 #nosotros img{
     padding: 1.5rem 1.5rem;
     height: 350px;

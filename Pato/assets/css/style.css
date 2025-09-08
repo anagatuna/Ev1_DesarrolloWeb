@@ -1,9 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Estilos básicos cuerpo */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
@@ -11,6 +6,7 @@ body {
   color: #333;
 }
 
+/* Contenedor principal */
 .content {
   width: 90%;
   max-width: 1000px;
@@ -18,64 +14,74 @@ body {
   padding: 2rem 0;
 }
 
+/* Encabezado principal */
 header {
   text-align: center;
   margin-bottom: 2rem;
   padding: 2rem;
-  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  background: linear-gradient(135deg, #4e73df, #1cc88a); /* Fondo degradado */
   color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Sombra suave */
 }
 
+/* Título encabezado */
 header h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
+/* Subtítulo encabezado */
 header p {
   font-size: 1.2rem;
 }
 
+/* Lista de navegación */
 nav ul {
   list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+  display: flex; /* Elementos en fila */
+  justify-content: center; /* Centrado horizontal */
+  gap: 2rem; /* Espaciado entre enlaces */
   padding: 0;
   margin: 0;
 }
 
+/* Elemento de lista nav */
 nav li {
   margin: 0;
 }
 
+/* Enlaces navegación */
 nav a {
   text-decoration: none;
   font-weight: bold;
   color: #4e73df;
-  transition: color 0.3s;
+  transition: color 0.3s; /* Animación color */
 }
 
+/* Hover navegación */
 nav a:hover {
   color: #1cc88a;
 }
 
+/* Secciones principales */
 section {
     margin-bottom: 3rem;
     padding: 2rem;
     background: #f1f1f1;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    border-color: #3d7edf   
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animación hover */
+    border-color: #3d7edf;
 }
 
+/* Hover secciones */
 section:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Eleva sección */
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
+/* Títulos secciones */
 section h2 {
     margin-bottom: 1rem;
     color: #4e73df;
@@ -85,6 +91,7 @@ section h2 {
     gap: 0.5rem;
 }
 
+/* Barra decorativa títulos */
 section h2::before {
     content: "";
     display: block;
@@ -94,6 +101,7 @@ section h2::before {
     border-radius: 3px;
 }
 
+/* Imágenes dentro secciones */
 section img {
     width: 200px;
     height: auto;
@@ -103,19 +111,23 @@ section img {
     transition: transform 0.3s;
 }
 
+/* Hover imágenes */
 section img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Ampliar al pasar */
 }
 
+/* Lista prácticas */
 #practicas ul {
     list-style: none;
     padding-left: 0;
 }
 
+/* Elementos lista prácticas */
 #practicas li {
     margin: 0.5rem 0;
 }
 
+/* Enlaces prácticas */
 #practicas a {
     text-decoration: none;
     color: #1cc88a;
@@ -123,6 +135,7 @@ section img:hover {
     transition: color 0.3s;
 }
 
+/* Hover enlaces prácticas */
 #practicas a:hover {
     color: #4e73df;
 }
