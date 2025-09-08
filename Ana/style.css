@@ -1,0 +1,106 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #fff5f7;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+/* Header */
+.header-card h1 {
+  color: #ea4d89;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.header-card h3 {
+  color: #555;
+}
+
+/*  Navbar */
+.nav-custom {
+  border-bottom: 1px solid #f3d9e3;
+}
+.nav-custom .nav-link {
+  color: #333;
+  margin: 0 18px;         
+  font-weight: 500;
+  transition: color .2s, border-bottom .2s, opacity .2s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: .25rem;
+}
+.nav-custom .nav-link:hover {
+  color: #ea4d89;
+  opacity: .9;
+}
+
+/* Títulos */
+.section-title {
+  position: relative;
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 44px;             
+  height: 3px;
+  background: #ffe3ec;
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+/* Cards */
+.card {
+  border: 1px solid #f3d9e3;
+  border-radius: 16px;
+}
+.card p {
+  color: #555;
+  text-align: justify;
+  line-height: 1.7;
+}
+.card-float {
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.card-float:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 26px rgba(234, 77, 137, .22);
+  border-color: #ffd1e0;
+}
+
+/* Imágenes */
+.img-cover {
+  height: 220px;           
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Prácticas */
+.list-practicas {
+  margin: 0;
+  padding: 0;
+}
+.list-practicas li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+.list-practicas li i {
+  color: #ea4d89;
+  width: 22px;
+  text-align: center;
+}
+.list-practicas li a {
+  color: #ea4d89;
+  text-decoration: none;
+  transition: color .2s, transform .2s;
+}
+.list-practicas li a:hover {
+  color: #333;
+  transform: translateX(4px);
+}
