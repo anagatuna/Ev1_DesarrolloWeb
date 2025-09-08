@@ -1,32 +1,37 @@
+/* Estilos generales */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #e6ecf0;
+  background: #e6ecf0; /* fondo gris claro */
 }
 
+/* Contenedor principal */
 .container {
-  display: flex;
+  display: flex; /* columnas lado a lado */
   width: 80%;
-  margin: 20px auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin: 20px auto; /* centrado */
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* sombra ligera */
   border-radius: 15px;
 }
 
+/* Columna izquierda */
 .sidebar {
   width: 30%;
-  background: #5863c5;
+  background: #5863c5; /* azul */
   color: white;
   padding: 20px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 }
 
+/* Títulos en sidebar */
 .sidebar h2 {
   border-bottom: 2px solid white;
   padding-bottom: 5px;
   margin-top: 20px;
 }
 
+/* Foto perfil */
 .sidebar img {
   padding: 1rem 1rem;
   width: 55%;
@@ -34,6 +39,7 @@ body {
   margin-bottom: 20px;
 }
 
+/* Columna derecha */
 .contenido {
   width: 70%;
   background: white;
@@ -42,12 +48,14 @@ body {
   border-bottom-right-radius: 15px;
 }
 
+/* Encabezado principal */
 .contenido header h1 {
   margin: 0;
   font-size: 28px;
   color: #5863c5;
 }
 
+/* Subtítulos secciones */
 .contenido h2 {
   color: #5863c5;
   margin-top: 20px;
