@@ -61,9 +61,9 @@ nav a:hover {
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-/* Titulares */
+/* Títulos */
 h1 {
-  color: #a37c27; /* dorado vintage */
+  color: #a37c27;
   font-weight: bold;
 }
 
@@ -114,7 +114,7 @@ h2, h3 {
 .integrante a {
   display: inline-block;
   padding: 6px 10px;
-  background-color: #b23b3b; /* rojo vino */
+  background-color: #7a5c2b; 
   color: #fff;
   text-decoration: none;
   border-radius: 6px;
@@ -124,7 +124,7 @@ h2, h3 {
 }
 
 .integrante a:hover {
-  background-color: #8e2f2f;
+  background-color: #886f47;
 }
 
 /* Enlaces */
@@ -167,6 +167,16 @@ h2, h3 {
 .lista-enlaces a:hover {
   background-color: #e6dbc9;
   color: #2e2410;
+}
+
+.bloque-enlaces a {
+  color: #4b3a1a;                
+  font-weight: 700;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
+}
+.bloque-enlaces a:hover {
+  color: #775e30;                
 }
 
 @media (max-width: 1200px) {
