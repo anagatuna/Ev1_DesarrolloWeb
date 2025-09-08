@@ -1,0 +1,246 @@
+body {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* unidad de medida de la pantalla del dispositivo que accede*/
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+
+
+.content {
+    background-color: #fff;
+    margin: 10px;
+    width: 90%;
+    padding: 20px;
+    box-shadow: 0 4px 10px silver;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow:hidden;  
+}
+
+header {
+    background-color: #7f5a1a;
+    padding: 10px 0px 10px 15px;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+}
+
+header h1 {
+    text-shadow: 1px 1px 2px #000;
+}
+
+nav {
+    background-color: #000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #c09c60;
+    color: #000;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center
+}
+
+.carrusel {
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-productos {
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-250rem);
+    }
+}
+
+.img-productos {
+    width: 50rem;
+    height: 30rem;
+    object-fit: cover;
+}
+
+#menu{
+    width: 90%;
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: #fefef4;
+    border-radius: 50px;
+    color: #4b3b2b;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+#menu ul li {
+    margin-bottom: 1.6rem;
+    border-left: 4px solid #bd956d;
+    padding-left: 1rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+#menu ul li:hover {
+    background-color: #f3e9d2;
+}
+
+#menu ul li strong {
+    font-size: 1.15rem;
+    color: #7f5a1a;
+}
+
+#menu ul li small {
+    display: block;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #8b7d65;
+    margin-top: 0.2rem;
+}
+
+.promos {
+    display: grid;
+    grid-template-columns: 0.7fr 0.7fr;
+    justify-content: center;
+    gap: 7rem;
+}
+
+.promo {
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    max-width: 400px;
+    margin: 0 auto;
+    transition: background-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    cursor: pointer;
+
+}
+
+.promo img {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.promo:hover {
+    background-color: #fff9ec;
+    transform: scale(1.05); /* 5% más grande */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* sombra para resaltar */
+}
+
+#promociones {
+    width: 90%;
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: #fefef4;
+    border-radius: 50px;
+    color: #4b3b2b;
+}
+
+.recomendacion{
+    width:fit-content;
+    text-align: center;
+    margin: 40px auto;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: #8a6868;
+}
+
+.site-footer {
+    background-color:#654714;
+    color: #f0f0f0;
+    box-shadow: 10px rgb(0, 0, 0, 0.15);
+    padding: 30px;
+    margin: -1.5rem ;
+    margin-top: 3rem;
+}
+
+#nosotros{
+    margin: 1rem;
+    padding: 1rem 1rem;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 7rem;
+}
+
+#contacto {
+    margin: 1rem;
+    padding: 1rem 1rem;
+
+}
+
+#contacto ul li{
+    list-style: none;
+}
+    
+.redes-sociales {
+    display: block;
+    text-align: center;
+    padding: 0;
+}
+
+.redes-sociales ul {
+    list-style: none;  
+    margin: 0;         
+    padding: 0;        
+    display: flex;     
+    gap: 10px;         
+    justify-content: center;
+}
+
+.redes-sociales ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.copyright-display{
+    text-align: center;
+    color: #ffcb98;
+}
