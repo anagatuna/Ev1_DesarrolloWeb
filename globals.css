@@ -2,9 +2,9 @@ body {
   margin-top: 1px;
   margin-left: 100px;
   margin-right: 100px;
-  font-family: 'Georgia', 'Times New Roman', serif; /* fuente con más estilo clásico */
-  color: #4b3a1a;                /* texto principal marrón oscuro */
-  background-color: #f6f1e7;     /* fondo beige claro tipo papel */
+  font-family: 'Poppins';
+  color: #4b3a1a;                
+  background-color: #f6f1e7;     
 }
 
 /* Encabezado */
@@ -13,7 +13,7 @@ header {
   top: 0;
   color: #4b3a1a;
   backdrop-filter: blur(6px);
-  background: rgba(246, 241, 231, 0.9); /* fondo translúcido beige */
+  background: rgba(246, 241, 231, 0.9);
 }
 
 .topbar {
