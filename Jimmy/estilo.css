@@ -1,3 +1,4 @@
+/* Estilo para cuerpo de pagina */
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
@@ -12,17 +13,18 @@ body {
     padding: 20px;
 }
 
+/* Estilo para encabezado */
 header {
     text-align: center;
     margin-bottom: 30px;
 }
 
 header img {
-    width: 200px;       /* Puedes ajustar el tamaño */
-    height: 200px;      /* Mantener proporción cuadrada para que sea perfectamente circular */
-    border-radius: 50%; /* Esto hace que la imagen sea redonda */
-    object-fit: cover;  /* Recorta la imagen si no es cuadrada, para que se vea bien */
-    margin-top: 15px;   /* Espacio entre el texto y la imagen */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 15px;
 }
 
 header h1 {
@@ -34,6 +36,7 @@ header p {
     font-style: italic;
 }
 
+/* Estilo para secciones */
 section {
     background-color: #fff;
     padding: 20px;
@@ -48,6 +51,7 @@ section h2 {
     margin-bottom: 10px;
 }
 
+/* Estilo para los apartados de las practicas */
 #practicas ul {
     list-style: none;
     padding-left: 0;
