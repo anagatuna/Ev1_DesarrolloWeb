@@ -181,14 +181,14 @@ footer h1 {
     color: #fff;
 }
 
-footer a {
+footer span {
     color: #ffd591;
     text-decoration: none;
     font-weight: bold;
     margin: 0 0.5rem;
 }
 
-footer a:hover {
+footer span:hover {
     text-decoration: underline;
 }
 
