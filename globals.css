@@ -1,23 +1,25 @@
-body{
-  margin-top:1px;
+body {
+  margin-top: 1px;
   margin-left: 100px;
   margin-right: 100px;
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu, Cantarell, 'Noto Sans', Arial, 'Apple Color Emoji','Segoe UI Emoji';
-  color: #e8eefc; 
-  background-color: #0b1020;
+  font-family: 'Georgia', 'Times New Roman', serif; /* fuente con más estilo clásico */
+  color: #4b3a1a;                /* texto principal marrón oscuro */
+  background-color: #f6f1e7;     /* fondo beige claro tipo papel */
 }
 
+/* Encabezado */
 header {
   position: sticky;
   top: 0;
-  color: white;
-  backdrop-filter: blur(8px);
+  color: #4b3a1a;
+  backdrop-filter: blur(6px);
+  background: rgba(246, 241, 231, 0.9); /* fondo translúcido beige */
 }
 
 .topbar {
   display: flex;
-  align-items: center;      /* centra verticalmente */
-  justify-content: center;  /* centra horizontalmente */
+  align-items: center;
+  justify-content: center;
   gap: 0.75rem;
   padding: 0.8rem 0;
 }
@@ -33,26 +35,43 @@ nav ul {
 
 nav a {
   display: inline-block;
-  padding: 0.55rem 0.8rem;
-  border: 1px solid #000000; /* color del borde */
+  padding: 0.5rem 0.9rem;
+  border: 1px solid #c4b89b;
   border-radius: 999px;
   font-size: 0.95rem;
-  color: white; /* color del enlace */
+  color: #4b3a1a;
   text-decoration: none;
+  background-color: #f6f1e7;
+  transition: all 0.2s;
 }
 
+nav a:hover {
+  background-color: #d9ccb3;
+  color: #2e2410;
+}
+
+/* Secciones */
 .seccion1 {
-background-color: #141e3f;
-padding: 2px 0px 10px 15px;
-border-radius: 10px 10px 10px 10px;
-color: white;
-margin-bottom: 10px;
+  background-color: #fbf8f3;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border: 1px solid #e1d6c5;
+  color: #4b3a1a;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-h1{
-    color: orange;
+/* Titulares */
+h1 {
+  color: #a37c27; /* dorado vintage */
+  font-weight: bold;
 }
 
+h2, h3 {
+  color: #6b5430;
+}
+
+/* Equipo */
 .equipo {
   display: flex;
   flex-wrap: wrap;
@@ -62,12 +81,13 @@ h1{
 }
 
 .integrante {
-  background-color: #1c2754;
+  background-color: #fffdf8;
   padding: 15px;
   border-radius: 10px;
   text-align: center;
   width: 220px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  border: 1px solid #e1d6c5;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 .integrante img {
@@ -76,69 +96,50 @@ h1{
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 10px;
-  border: 3px solid #e8eefc;
+  border: 3px solid #d9ccb3;
 }
 
 .integrante h3 {
   margin: 8px 0 4px;
   font-size: 1.1rem;
-  color: rgb(0, 255, 76);
+  color: #7a5c2b;
 }
 
 .integrante p {
   margin: 0 0 8px;
   font-size: 0.9rem;
+  color: #6b5430;
 }
 
 .integrante a {
   display: inline-block;
   padding: 6px 10px;
-  background-color: rgb(62, 151, 129);
-  color: #0b1020;
+  background-color: #b23b3b; /* rojo vino */
+  color: #fff;
   text-decoration: none;
   border-radius: 6px;
   font-size: 0.9rem;
   font-weight: bold;
+  transition: background 0.3s;
 }
 
 .integrante a:hover {
-  background-color: #17574e;
+  background-color: #8e2f2f;
 }
 
+/* Enlaces */
 .bloque-enlaces {
-  background-color: #1c2754;
+  background-color: #fffdf8;
   padding: 15px;
   margin: 10px 0;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  border: 1px solid #e1d6c5;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .bloque-enlaces h2 {
-  color: rgb(0, 255, 76);
+  color: #7a5c2b;
   margin-bottom: 10px;
-}
-
-.lista-enlaces {
-  list-style: none;
-  padding: 0;
-}
-
-.lista-enlaces li {
-  margin: 6px 0;
-}
-
-.lista-enlaces a {
-  color: #e8eefc;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 4px 6px;
-  border-radius: 4px;
-  transition: background 0.3s, color 0.3s;
-}
-
-.lista-enlaces a:hover {
-  background-color: #17574e;
-  color: #fff;
 }
 
 .lista-enlaces {
@@ -150,17 +151,22 @@ h1{
   gap: 12px;
 }
 
-.lista-enlaces li {
-  margin: 0;
-}
-
 .lista-enlaces a {
   display: block;
   padding: 8px 10px;
   text-align: left;
-  border: 1px solid #2a376f;
+  border: 1px solid #d9ccb3;
   border-radius: 6px;
-  background: #172351;
+  background: #fbf8f3;
+  color: #4b3a1a;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.lista-enlaces a:hover {
+  background-color: #e6dbc9;
+  color: #2e2410;
 }
 
 @media (max-width: 1200px) {
